@@ -74,6 +74,7 @@ export default function Index() {
       }
     } else {
       try {
+        // @ts-ignore
         const dataUrl = await domtoimage.toJpeg(imageRef.current, {
           quality: 0.95,
           width: 320,
